@@ -3,6 +3,14 @@ from main import *
 
 def test_return_possibilities():
     initial_set = get_five_letter_words()
+    # todo consider reworking get_five_letter_words() so that it is sorted (bc rn it returns a new order for every call)
+    # todo it actually seems to return a different initial_set on every call, suggesting that there is a problem with
+    # todo get_five_letter_words
+
+    i_carry = initial_set.index("carry")
+    print(initial_set[i_carry])
+
+    # todo precompute expected bits of initial information set
 
     # todo the current problem in the code is with this loop that gets the current set
     # rails
@@ -27,7 +35,8 @@ def test_return_possibilities():
         ]
 
     new_set = return_possibilities(example_feedback_1, initial_set)
-    print(new_set)
+    print("new set= ", new_set)
+    # todo this returns
 
     # look at this interesting feedback case and make sure it handles it
     # possibility=  tenon
