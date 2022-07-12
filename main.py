@@ -83,6 +83,8 @@ def match_in_position(character, position, initial_set, already_matched, minimum
     # iterable
 
     final_set = []
+    # todo the problem here is that initial_set is equal to zero
+    print("initial set =", initial_set)
     for item in initial_set:
         found_instances = 0
         for specific_position in position:
