@@ -168,7 +168,7 @@ def return_possibilities(feedback, initial_set):
             print("letter= ", letter)
             # letter[0] gives the letter in char form
             # letter[1] gives the set of possible positions
-            current_set = match_in_position(letter[0], letter[1], matched_letters_and_positions, current_set)
+            current_set = match_in_position(letter[0], letter[1], current_set, matched_letters_and_positions)
 
     return current_set
 
