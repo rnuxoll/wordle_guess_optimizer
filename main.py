@@ -20,6 +20,7 @@ def get_five_letter_words():
         elif not ("." in word or "'" in word):
             five_letter_words.append(word)
 
+    five_letter_words.sort()
     return five_letter_words
 
 """
